@@ -1,0 +1,23 @@
+
+<div>
+
+	<p>Date Filter to Format Data</p>
+	{{dateObj | date:'shortDate'}}
+
+	<h5>Table with search option in the name field alone</h5>
+	<span>Search by book name</span><input type="text" ng-model="home.search.name"/>
+	<table>
+		<thead>
+			<th>SI.No</th>
+			<th>Book Name</th>
+			<th>Author Name</th>
+			<th>Price</th>
+		</thead>
+		<tr ng-repeat="buk in books | filter:home.search track by $index">
+			<td>{{$index+1}}</td>
+			<td>{{buk.name}}</td>
+			<td>{{buk.author}}</td>
+			<td>{{buk.price}}</td>
+		</tr>
+	</table>
+</div>

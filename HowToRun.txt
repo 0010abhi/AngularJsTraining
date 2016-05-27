@@ -1,0 +1,5 @@
+For Running this 
+1) install node js
+2) Open Folder AngularJsTraining in terminal 
+3) Type Command : npm start and enter 
+4) run on localhost:8080

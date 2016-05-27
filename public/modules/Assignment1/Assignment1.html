@@ -1,0 +1,73 @@
+<div class="row">
+<h2>{{message}}</h2>
+<div class="col-lg-6 col-md-6" ng-controller="userController">
+<h3>{{message}}</h3>
+<br/>
+<form>
+<label class="form-label">Enter Anything About User (Name/Email/Phone)</label>
+<input class="form-control" type="text" name="username" ng-model="getuser"/>
+<br/>
+<button class="btn btn-default" ng-click="GetUser(getuser)">Get User</button>
+</form>
+<br/>
+<table class="table table-striped">
+<thead ng-if="userFound == 'NoUserFound'">
+<tr>
+<td>No User Found</td>
+</tr>
+</thead>
+<thead ng-if="userFound != 'NoUserFound'">
+<tr>
+<td>Name</td>
+<td>Email</td>
+<td>Phone</td>
+</tr>
+</thead>
+<tbody ng-if="userFound != 'NoUserFound'">
+<tr>
+<td>{{userFound.username}}</td>
+<td>{{userFound.email}}</td>
+<td>{{userFound.phone}}</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h4>User List</h4>
+<table class="table table-striped">
+<thead ng-if="userData.length===0">
+<tr>
+<td>No Records Found</td>
+</tr>
+</thead>
+<thead ng-if="userData.length>0">
+<tr>
+<td>Name</td>
+<td>Email</td>
+<td>Phone</td>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="user in userData">
+<td>{{user.username}}</td>
+<td>{{user.email}}</td>
+<td>{{user.phone}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-lg-6 col-md-6" ng-controller="adminController">
+<h3>{{message}}</h3>
+<form>
+<label class="form-label">username</label>
+<input class="form-control" type="text" name="username" ng-model="user.username"/>
+<br/>
+<label class="form-label">email</label>
+<input class="form-control" type="email" name="email" ng-model="user.email"/>
+<br/>
+<label class="form-label">phone</label>
+<input class="form-control" type="phone" name="phone" ng-model="user.phone"/>
+<br/>
+<button class="btn btn-default" ng-click="Submit(user)">Submit</button>
+</form>
+</div>
+</div>

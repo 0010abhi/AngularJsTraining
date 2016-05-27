@@ -1,0 +1,13 @@
+extends layout
+block content
+	div(class="container container-fluid")
+		h3= title
+		div
+			ul(class="nav nav-tabs")
+				li(role="presentation")
+					a(class="btn btn-default" href="#/") Home
+				li(role="presentation")
+					a(class="btn btn-default" href="#/Assignment1") Assignment1
+				li(role="presentation")
+					a(class="btn btn-default" href="#/Assignment2") Assignment2
+		div(ng-view="")
