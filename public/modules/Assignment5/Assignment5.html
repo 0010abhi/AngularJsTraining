@@ -1,0 +1,24 @@
+<div class="row">
+<h2>{{message}}</h2>
+<div class="col-md-5">
+<form>
+<div>
+<label>Choose Date : </label>
+<input class="form-control" type="date" ng-model="DateSelected"/>
+</div>
+<br/>
+<div>
+<label>Choose Date Format : </label>
+<select class="form-control" ng-model="DateFormat" ng-options="Options.Value as Options.Label for Options in DateFormatOptions"></select>
+</div>
+<br/>
+<div>
+<button class="btn btn-default" ng-click="Show(DateSelected,DateFormat)">Show</button>
+</div>
+<br/>
+<div>
+<label>Result Is : {{FormattedDate}}</label>
+</div>
+<br/>
+</form>
+</div>

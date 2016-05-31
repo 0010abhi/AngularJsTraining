@@ -1,23 +1,54 @@
-
 <div>
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+</form> 
 
 	<p>Date Filter to Format Data</p>
 	{{dateObj | date:'shortDate'}}
 
-	<h5>Table with search option in the name field alone</h5>
-	<span>Search by book name</span><input type="text" ng-model="home.search.name"/>
-	<table>
+	<div class="row">
+	
+	<div class=" col-sm-offset-2 col-sm-3">
+	<form name="SearchOptions">
+	<input ng-model="searchBook.filters" type="radio" value="search"> Search By Any Field
+	<br/>
+	<input ng-model="searchBook.filters" type="radio" value="search.Name"> Search by Book Name
+	<br/>
+	<input ng-model="searchBook.filters" type="radio" value="query"> Search by Book/Author Name
+	<br/>
+	{{searchBook}}{{2+2}}{{searchBook.filters}}
+	</div>
+	
+	<div class="col-sm-4">
+	<input class="form-control" type="text" placeholder="Type here to search .."  ng-model="searchBook["filters"]"/>
+	</div>
+	
+	</form>
+	
+	
+	</div>
+	
+	<div class="row">
+	<div class=" col-sm-offset-2 col-sm-8">
+	<table class="table">
 		<thead>
 			<th>SI.No</th>
 			<th>Book Name</th>
 			<th>Author Name</th>
 			<th>Price</th>
 		</thead>
-		<tr ng-repeat="buk in books | filter:home.search track by $index">
+		<tbody>
+		<tr ng-repeat="buk in books | filter:search">
 			<td>{{$index+1}}</td>
-			<td>{{buk.name}}</td>
-			<td>{{buk.author}}</td>
-			<td>{{buk.price}}</td>
+			<td>{{buk.Name}}</td>
+			<td>{{buk.Author}}</td>
+			<td>{{buk.Price}}</td>
 		</tr>
+		</tbody>
 	</table>
+	</div>
+	</div>
 </div>

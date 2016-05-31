@@ -10,8 +10,22 @@ app.controller("userControl",function($scope,$http){
 		$http.get('http://localhost:3000/userdata.json')
 		.success(function success(sucRes){
 			console.log(sucRes);
+			$scope.books = sucRes;
 		});	
 	}
 	
-	$scope.books = booksFunction();
+	booksFunction();
+	
+	$scope.mySearch = function(item){
+	    if (!$scope.query || (item.Name.toLowerCase().indexOf($scope.query) != -1) || (item.Author.toLowerCase().indexOf($scope.query.toLowerCase()) != -1) ){
+	        return true;
+	    }
+	    return false;
+	 };
+	 
+	 $scope.searchBook = {
+			 'filters' : 'search'
+	 }
+	 
+	 $scope.myFilter = $scope.searchBook.filters; 
 })

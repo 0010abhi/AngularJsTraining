@@ -1,7 +1,7 @@
 (function(angular) {
   'use strict';
 angular
-.module("AngularApp", ['ngRoute','ui.bootstrap','AngularApp.Assignment1','AngularApp.Assignment2'])
+.module("AngularApp", ['ngRoute','ui.bootstrap','AngularApp.Assignment1','AngularApp.Assignment2','AngularApp.Assignment5','AngularApp.UiGrid'])
 .config(Configuration)
 .controller("appController",appController);
 
