@@ -1,0 +1,14 @@
+<div class="row">
+<h2>{{message}}</h2>
+<h3>Visionaries who created empires from virtually nothing</h3>
+<div ng-repeat="Person in VisionariesData">
+  <div class="col-md-7">
+<h3>{{$index+1}}. <a href="#/Assignment4/{{Person.Id}}">{{Person.Name}}</a></h3>
+<h4>Comapny: {{ Person.Company}}</h4>
+<p> {{Person.Des}}</p>
+  </div>
+  <div class="col-md-4">
+    <img src="modules/Assignment4/Images/{{Person.Img}}.PNG" alt="{{Person.Img}}" height="300px" width="90%"></img>
+  </div>
+</div>
+</div>

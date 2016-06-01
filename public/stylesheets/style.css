@@ -13,6 +13,12 @@ font-size:24px;
 text-align:center;
 height:100px;
 margin:auto;
-width:80%;
+width:100%;
 background-color:aquamarine;
+    opacity: 0.7;
+    border: dotted 1px black;
+	outline: none;
+}
+#FileOutput{
+  text-align:justify;
 }
