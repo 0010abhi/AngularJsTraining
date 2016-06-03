@@ -8,29 +8,29 @@ function fileRead(){
 	return {
 		restrict : 'AE',
 		link : function(scope,elem,attrs){
-      elem.bind("focus",function(e){
-        $("#DragAreaInput").attr("readonly",true);
-      });
-      elem.bind("blur",function(e){
-        $("#DragAreaInput").attr("readonly",false);
-        //e.currentTarget.attributes("readonly",readonly);
-      });
+//      elem.bind("focus",function(e){
+//        $("#DragAreaInput").attr("readonly",true);
+//      });
+//      elem.bind("blur",function(e){
+//        $("#DragAreaInput").attr("readonly",false);
+//        //e.currentTarget.attributes("readonly",readonly);
+//      });
 			elem.bind("drop",function(e){
-        $("#DragAreaInput").attr("readonly",false);
+        //$("#DragAreaInput").attr("readonly",false);
 
         e.preventDefault();
-				// var file = e.originalEvent.dataTransfer.files[0];
-				// if(file.type=== "" || file.type === "text/plain" || file.type === "json"){
-				// 	var reader = new FileReader();
-				// 	reader.onload=function(data){
-				// 		var output = document.getElementById('FileOutput');
-				// 			output.innerHTML = data.target.result;
-        //       elem[0].value = "File Dropped";
-      	// 			}
-      	// 			reader.readAsText(file);
-				// } else {
-				// 	alert(file.type + " is not supported");
-				// }
+				 var file = e.originalEvent.dataTransfer.files[0];
+				 if(file.type=== "" || file.type === "text/plain" || file.type === "json"){
+				 	var reader = new FileReader();
+				 	reader.onload=function(data){
+				 		var output = document.getElementById('FileOutput');
+				 		output.innerHTML = data.target.result;
+               //elem[0].value = "File Dropped";
+      	 			}
+      	 			reader.readAsText(file);
+				 } else {
+				 	alert(file.type + " is not supported");
+				 }
 			});
 		}
 	}
