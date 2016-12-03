@@ -1,2 +1,1 @@
 web: npm start
-web: node public/modules/Assignment2/uiRouterProject/uiRouterServer.js
