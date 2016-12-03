@@ -1,0 +1,31 @@
+[{
+	"Id": "1",
+	"Name": "Bill Gates",
+	"Company": "Microsoft",
+	"Img": "BillGates",
+	"Des": "No profile of the world’s prodigious wealth creators would be complete without Bill Gates. After dropping out of the nation’s top-ranked university (Harvard. because he “just couldn’t bring himself to go to class”, Gates ambitiously founded Microsoft with partner Paul Allen. The company originally set out to sell computer programming languages, but soon veered very far (and very profitably. off of that path. Instead, Microsoft created the now-ubiquitous Windows operating system that powers 90% of the world’s personal computers. Gates officially retired from Microsoft in 2008, exiting with a net worth of $58 billion and 3rd place on Forbes’ 100 Wealthiest People list."
+}, {
+	"Id": "2",
+	"Name": "Steve Jobs",
+	"Company": "Apple",
+	"Img": "SteveJobs",
+	"Des": "Much like Bill Gates, Steve Jobs left college on nothing more than the overwhelming feeling that he was not going to find his true calling there. In a now-famous commencement address (see below., Jobs explains that he “decided to drop out and trust that it would all work out okay.” Luckily for him and the rest of the computer-using world, it did. Jobs teamed up with engineering wiz Steve Wozniak to create the world’s first personal computer, leading to a wave of innovation that culminated in the Apple line of products. After being kicked out of the company he started, Jobs founded animated movie giant Pixar. He would later return Apple and spearhead a Renaissance led by the creation of the iPod."
+}, {
+	"Id": "3",
+	"Name": "Steve Wozniak",
+	"Company": "Apple",
+	"Img": "SteveWozniak",
+	"Des": "While Steve Jobs will probably always be the face of Apple Computer, Steve Wozniak was possibly even more critical to its success. In fact, the case can be made that the entire rise of personal computing hinged on Wozniak’s (or “Woz”, is he is also known. decision to follow his passion for engineering and literally invent the computer as we now know it. It wasn’t all rosy, though. To finance this expedition into the technological unknown, both Woz and Jobs had to sell some of their most prized personal possessions. For Woz, it was his HP Scientific Calculator; for Jobs, his Wolkswagen wan. Together, the two raised the $1,300 they needed to create the earliest Apple prototypes in Job’s tiny garage. The rest, as they say, is history."
+}, {
+	"Id": "4",
+	"Name": "Jerry Yang and David Filo",
+	"Company": "Yahoo",
+	"Img": "YahooBoys",
+	"Des": "Today, Yahoo! is one of the world’s top search engines, with $7 billion in 2007 revenue and operating income of $730 million. But it wasn’t long ago that the ultra-popular web portal was nothing more than side project between a couple of college students. According to Jessica Livingston’s book “Founders at Work”, tamford University’s Jerry Yang and David Filo originally created their search technology for their own personal use. There was no easy way to find information on their school’s network, so the pair created a crawler that would track down what they needed and make it easily searchable. It all snowballed from there, as Yahoo! traded a mind-blowing $118 per share just prior to the 2000’s tech stock crash.Today, Yahoo! is being fought over by Google and Microsoft, each of whom is eager to lavish $40 billion+ in a quest to buy or partner with them."
+}, {
+	"Id": "5",
+	"Name": "Mark Zuckerberg",
+	"Company": "Facebook",
+	"Img": "Mark",
+	"Des": "Continuing in the technology entrepreneur vein, we arrive at Mark Zuckerberg. The now 24 year old Harvard dropout (noticing a pattern here?. is the man behind Facebook, which, while not yet on Microsoft or Google’s level, is undoubtedly an empire. A Wired article entitled “How Mark Zuckerberg Turned Facebook Into the Web’s Hottest Platform” notes that Zuckerberg “.” In fact, Facebook is now such a force to be reckoned with that there are entire companies going into business and acquiring venture funding to create applications that work with the site."
+}]

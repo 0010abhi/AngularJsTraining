@@ -1,23 +1,58 @@
-
 <div>
 
-	<p>Date Filter to Format Data</p>
-	{{dateObj | date:'shortDate'}}
+  <div class="row">
+  <div class="col-md-offset-2 col-md-4">
+	<h3>Date Filter to Format Data</h3>
+  <ol>
+<li>{{dateObj | date: 'MMMM dd, yyyy'}}</li>
+<li>{{dateObj | date: 'MMM dd, yyyy'}}</li>
+<li>{{dateObj | date: 'EEEE dd-MM-yy, HH:mm:ss'}}</li>
+<li>{{dateObj | date: 'EEE dd.mm.yyyy hh:mm:ss a'}}</li>
+  </ol>
+  </div>
+  </div>
 
-	<h5>Table with search option in the name field alone</h5>
-	<span>Search by book name</span><input type="text" ng-model="home.search.name"/>
-	<table>
+  <div class="row">
+    <div class=" col-sm-offset-2 col-sm-4">
+<h3>Custom Filter</h3>
+</div>
+  </div>
+	<div class="row">
+	<div class=" col-sm-offset-2 col-sm-4">
+	<form name="SearchOptions">
+	<!-- <input ng-model="searchBook.filters" type="radio" value="searchByAnything"> Search By Any Field
+	<br/>
+	<input ng-model="searchBook.filters" type="radio" value="searchByName"> Search by Book Name
+	<br/>
+	<input ng-model="searchBook.filters" type="radio" value="searchByNameorAuthor"> Search by Book/Author Name
+	<br/>
+  {{searchBook.filters}} -->
+  <select class="form-control" ng-model="SelectFilter" ng-options="search.Value as search.Label for search in searchBook"></select>
+	</div>
+	<div class="col-sm-4">
+	<input class="form-control" type="text" placeholder="Type here to search .." ng-model="query" />
+	</div>
+	</form>
+	</div>
+
+	<div class="row">
+	<div class=" col-sm-offset-2 col-sm-8">
+	<table class="table">
 		<thead>
 			<th>SI.No</th>
 			<th>Book Name</th>
 			<th>Author Name</th>
 			<th>Price</th>
 		</thead>
-		<tr ng-repeat="buk in books | filter:home.search track by $index">
+		<tbody>
+		<tr ng-repeat="buk in books | filter: MySearch">
 			<td>{{$index+1}}</td>
-			<td>{{buk.name}}</td>
-			<td>{{buk.author}}</td>
-			<td>{{buk.price}}</td>
+			<td>{{buk.Name}}</td>
+			<td>{{buk.Author}}</td>
+			<td>{{buk.Price}}</td>
 		</tr>
+		</tbody>
 	</table>
+	</div>
+	</div>
 </div>

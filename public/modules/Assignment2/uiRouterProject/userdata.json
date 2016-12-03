@@ -1,3 +1,21 @@
-[ 
-  {'name' : 'My experiments with Truth','author':'M.K.Gandhi ','price':'$145'} 
- ]
+[{
+	"Name": "Long Road To Discover",
+	"Author": "Abhishek Sachdeva",
+	"Price": "$200"
+}, {
+	"Name": "Eat Sleep Code Repeat",
+	"Author": "Abhishek Malik",
+	"Price": "$250"
+}, {
+	"Name": "Code Blooded",
+	"Author": "Abhishek Bains",
+	"Price": "$1000"
+}, {
+	"Name": "The D Theroy : Drug Or Dream",
+	"Author": "Nirlitt Abhishek",
+	"Price": "$230"
+}, {
+	"Name": "Rejevenuate The Life",
+	"Author": "Abhishek Singh",
+	"Price": "$260"
+}]

@@ -1,0 +1,67 @@
+[{
+	"FirstName": "Abhishek",
+	"LastName": "Sachdeva",
+	"Age": "20",
+	"Place": "Rajasthan",
+	"Gender": "Male"
+}, {
+	"FirstName": "Avinash",
+	"LastName": "Malik",
+	"Age": "30",
+	"Place": "Jammu",
+	"Gender": "Male"
+}, {
+	"FirstName": "Bunny",
+	"LastName": "Sharma",
+	"Age": "32",
+	"Place": "Kashmir",
+	"Gender": "Male"
+}, {
+	"FirstName": "Gaurava",
+	"LastName": "Arora",
+	"Age": "23",
+	"Place": "Uttarakhand",
+	"Gender": "Male"
+}, {
+	"FirstName": "Richa",
+	"LastName": "Vedic",
+	"Age": "18",
+	"Place": "Uttar Pardes",
+	"Gender": "Female"
+}, {
+	"FirstName": "Tripti",
+	"LastName": "Pandey",
+	"Age": "16",
+	"Place": "Delhi",
+	"Gender": "Female"
+}, {
+	"FirstName": "Tommy",
+	"LastName": "Singh",
+	"Age": "33",
+	"Place": "Punjab",
+	"Gender": "Male"
+}, {
+	"FirstName": "Livleet",
+	"LastName": "Kaur",
+	"Age": "25",
+	"Place": "Chandigarh",
+	"Gender": "Female"
+}, {
+	"FirstName": "Namrata",
+	"LastName": "Gupta",
+	"Age": "19",
+	"Place": "Jharkhand",
+	"Gender": "Female"
+}, {
+	"FirstName": "Swaraj",
+	"LastName": "Subba",
+	"Age": "28",
+	"Place": "Sikkim",
+	"Gender": "Male"
+}, {
+	"FirstName": "Sonam",
+	"LastName": "Cheki",
+	"Age": "29",
+	"Place": "Aasam",
+	"Gender": "Female"
+}]
